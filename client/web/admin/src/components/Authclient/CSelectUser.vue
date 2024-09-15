@@ -1,0 +1,91 @@
+<template>
+  <c-input-select
+    data-test-id="select-user"
+    :options="user.options"
+    :get-option-label="getOptionLabel"
+    :get-option-key="getOptionKey"
+    :value="user.value"
+    :filterable="false"
+    @search="search"
+    @input="updateRunAs"
+  />
+</template>
+
+<script>
+import { debounce } from 'lodash'
+
+export default {
+  props: {
+    userID: {
+      type: String,
+      default: null,
+    },
+
+  },
+
+  data () {
+    return {
+      user: {
+        options: [],
+        value: undefined,
+
+        filter: {
+          query: null,
+          limit: 10,
+        },
+      },
+    }
+  },
+
+  created () {
+    this.fetchUsers()
+    this.getUserByID()
+  },
+
+  methods: {
+    search: debounce(function (query) {
+      if (query !== this.user.filter.query) {
+        this.user.filter.query = query
+        this.user.filter.page = 1
+      }
+
+      if (query) {
+        this.fetchUsers()
+      }
+    }, 300),
+
+    fetchUsers () {
+      this.$SystemAPI.userList(this.user.filter)
+        .then(({ set }) => {
+          this.user.options = set.map(m => Object.freeze(m))
+        })
+    },
+
+    async getUserByID () {
+      this.$SystemAPI.userRead({ userID: this.userID })
+        .then(user => {
+          this.user.value = user
+        }).catch(() => {
+          return {}
+        })
+    },
+
+    updateRunAs (user) {
+      if (user && user.userID) {
+        this.user.value = user
+      } else {
+        this.user.value = null
+      }
+      this.$emit('updateUser', user)
+    },
+
+    getOptionKey ({ userID }) {
+      return userID
+    },
+
+    getOptionLabel ({ userID, email, name, username }) {
+      return name || username || email || `<@${userID}>`
+    },
+  },
+}
+</script>

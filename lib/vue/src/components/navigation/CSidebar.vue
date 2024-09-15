@@ -1,0 +1,383 @@
+<template>
+  <div>
+    <div
+      @mouseleave="onHover(false)"
+    >
+      <b-sidebar
+        v-model="isExpanded"
+        data-test-id="sidebar"
+        :sidebar-class="`sidebar ${isExpanded ? 'expanded' : ''}`"
+        :header-class="`d-block sidebar-header ${isExpanded ? 'expanded border-bottom p-2' : ''}`"
+        :body-class="`${isExpanded ? 'px-3' : ''}`"
+        :footer-class="`rounded-right ${isExpanded ? 'px-2' : ''}`"
+        :no-header="!isExpanded"
+        :backdrop="isMobile"
+        backdrop-variant="white"
+        :shadow="isExpanded && 'sm'"
+        no-slide
+        :right="right"
+        no-close-on-route-change
+        no-close-on-esc
+      >
+        <template #header>
+          <div
+            class="d-flex align-items-center justify-content-between pl-2"
+            style="height: 47px;"
+          >
+            <img
+              data-test-id="img-main-logo"
+              class="logo w-auto border-0"
+              :src="logo"
+            >
+
+            <b-button
+              v-if="isMobile"
+              variant="outline-light border-0"
+              class="d-flex align-items-center justify-content-center p-2"
+              @click="closeSidebar()"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'times']"
+                class="h6 mb-0 text-dark"
+              />
+            </b-button>
+
+            <b-button
+              v-else
+              data-test-id="button-pin-icon"
+              variant="outline-light border-0"
+              class="d-flex align-items-center justify-content-center p-2"
+              @click="togglePin()"
+            >
+              <font-awesome-icon
+                data-test-id="pin-icon"
+                :icon="['fas', 'thumbtack']"
+                :class="`h6 mb-0 ${isPinned ? 'text-primary' : 'text-secondary'}`"
+              />
+            </b-button>
+          </div>
+
+          <div
+            v-if="!isExpanded"
+            class="d-flex align-items-center justify-content-center my-3"
+          >
+            <b-button
+              variant="link"
+              @click="togglePin()"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'chevron-right']"
+                class="h6 mb-0"
+              />
+            </b-button>
+          </div>
+
+          <div
+            v-if="isExpanded"
+            class="px-2"
+          >
+            <slot
+              name="header-expanded"
+            />
+          </div>
+
+
+          <hr
+            v-if="!isExpanded"
+            class="my-2"
+          >
+        </template>
+
+        <slot
+          v-if="isExpanded"
+          name="body-expanded"
+        />
+
+        <template #footer>
+          <slot
+            v-if="isExpanded"
+            name="footer-expanded"
+          />
+        </template>
+      </b-sidebar>
+    </div>
+
+    <div
+      class="d-flex align-items-center justify-content-center tab position-absolute p-2"
+    >
+      <b-button
+        v-if="expandOnHover && !disabledRoutes.includes($route.name)"
+        data-test-id="button-sidebar-open"
+        variant="outline-light"
+        size="lg"
+        class="d-flex align-items-center border-0"
+        @mouseover="onHover(true)"
+      >
+        <font-awesome-icon
+          :icon="['fas', 'bars']"
+          class="h4 mb-0 text-primary"
+        />
+      </b-button>
+
+      <b-button
+        v-else-if="!disabledRoutes.includes($route.name)"
+        data-test-id="button-home"
+        variant="outline-light"
+        size="lg"
+        class="d-flex align-items-center p-2 border-0"
+        :to="{ name: 'root' }"
+      >
+        <font-awesome-icon
+          :icon="['fas', 'home']"
+          class="h4 mb-0 text-primary"
+        />
+      </b-button>
+
+      <div
+        v-else
+        class="d-flex align-items-center border-0 p-2"
+      >
+        <img
+          class="icon w-auto border-0"
+          :src="icon"
+        >
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { throttle } from 'lodash'
+
+export default {
+  props: {
+    expanded: {
+      type: Boolean,
+      default: false,
+    },
+
+    pinned: {
+      type: Boolean,
+      default: false,
+    },
+
+    expandOnHover: {
+      type: Boolean,
+      default: false,
+    },
+
+    disabledRoutes: {
+      type: Array,
+      default: () => [],
+    },
+
+    icon: {
+      type: String,
+      default: () => ''
+    },
+
+    logo: {
+      type: String,
+      default: () => ''
+    },
+
+    right: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  data () {
+    return {
+      sidebarSettings : {},
+      isMobile: false,
+    }
+  },
+
+  computed: {
+    isExpanded: {
+      get () {
+        return this.expanded
+      },
+
+      set (expanded) {
+        this.$emit('update:expanded', expanded)
+      },
+    },
+
+    isPinned: {
+      get () {
+        return this.pinned
+      },
+
+      set (pinned) {
+        this.$emit('update:pinned', pinned)
+      },
+    },
+  },
+
+  created () {
+    this.checkIfMobile()
+
+    this.$root.$on('close-sidebar', this.closeSidebar)
+    window.addEventListener('resize', this.checkIfMobile)
+  },
+
+  beforeDestroy () {
+    this.$root.$off('close-sidebar', this.closeSidebar)
+    window.removeEventListener('resize', this.checkIfMobile)
+  },
+
+  watch: {
+    '$route.name': {
+      immediate: true,
+      handler () {
+        this.checkSidebar()
+      },
+    },
+
+    disabledRoutes: {
+      handler () {
+        this.checkSidebar()
+      },
+    },
+  },
+
+  methods: {
+    checkIfMobile: throttle(function () {
+      this.isMobile = window.innerWidth < 1024 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    }, 500),
+
+    checkSidebar () {
+      // If sidebar should be disabled on route, close and unpin when navigating to route
+      if (this.disabledRoutes.includes(this.$route.name)) {
+        this.isPinned = false
+        this.isExpanded = false
+      } else if (this.expandOnHover && !this.isExpanded) {
+        this.defaultSidebarAppearance()
+      }
+    },
+
+    onHover: throttle(function (expand) {
+      if (!this.pinned && this.expandOnHover) {
+        setTimeout(() => {
+          this.isExpanded = expand
+        }, expand ? 0 : 100)
+      }
+    }, 300),
+
+    togglePin () {
+      this.saveSettings(!this.isPinned)
+      this.isPinned = !this.isPinned
+    },
+
+    defaultSidebarAppearance () {
+      const localstorage_settings = JSON.parse(window.localStorage.getItem('sidebarSettings'))
+      if (localstorage_settings) {
+        this.sidebarSettings = localstorage_settings
+      }
+      const app_sidebar = (localstorage_settings || {})[this.$root.$options.name]
+      if (!this.isMobile) {
+        if (app_sidebar) {
+          this.isExpanded = app_sidebar.pinned
+          this.isPinned = app_sidebar.pinned
+        } else {
+          this.openSidebar()
+        }
+      } else {
+        this.closeSidebar()
+      }
+    },
+
+    saveSettings (pinned) {
+      if (this.sidebarSettings[this.$root.$options.name]) {
+        this.sidebarSettings[this.$root.$options.name].pinned = pinned
+      } else {
+        this.sidebarSettings[this.$root.$options.name] = { pinned: pinned }
+      }
+      window.localStorage.setItem('sidebarSettings', JSON.stringify(this.sidebarSettings))
+    },
+
+    openSidebar () {
+      this.isPinned = true
+      this.isExpanded = true
+    },
+
+    closeSidebar () {
+      this.isPinned = false
+      this.isExpanded = false
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+$header-height: 64px;
+
+.tab {
+  z-index: 1021;
+  top: 0;
+  height: $header-height;
+  width: 66px;
+}
+
+.icon {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.sidebar-header {
+  height: $header-height;
+}
+</style>
+
+<style lang="scss">
+$nav-width: 320px;
+
+.b-sidebar {
+  background-color: var(--white) !important;
+}
+
+.b-sidebar-backdrop {
+  opacity: 0.75 !important;
+}
+
+.sidebar {
+  display: flex !important;
+  left: calc(-#{$nav-width}) !important;
+  -webkit-transition: left 0.15s ease-in-out;
+  -moz-transition: left 0.15s ease-in-out;
+  -o-transition: left 0.15s ease-in-out;
+  transition: left 0.15s ease-in-out;
+
+  &.expanded {
+    left: 0 !important;
+    -webkit-transition: left 0.2s ease-in-out;
+    -moz-transition: left 0.2s ease-in-out;
+    -o-transition: left 0.2s ease-in-out;
+    transition: left 0.2s ease-in-out;
+  }
+}
+
+[dir="rtl"] {
+  .sidebar {
+    right: calc(-#{$nav-width}) !important;
+    -webkit-transition: right 0.15s ease-in-out;
+    -moz-transition: right 0.15s ease-in-out;
+    -o-transition: right 0.15s ease-in-out;
+    transition: right 0.15s ease-in-out;
+
+    &.expanded {
+      right: 0 !important;
+      -webkit-transition: right 0.2s ease-in-out;
+      -moz-transition: right 0.2s ease-in-out;
+      -o-transition: right 0.2s ease-in-out;
+      transition: right 0.2s ease-in-out;
+    }
+  }
+}
+</style>
