@@ -593,6 +593,10 @@ func (svc attachment) processImage(original io.ReadSeeker, att *types.Attachment
 		// Only supporting previews from images (for now)
 		return
 	}
+	if att.Meta.Original.Mimetype == "image/vnd.dwg" {
+		// Preview is not supported for images with .dwg
+		return
+	}
 
 	const (
 		iconMimetype  = "image/x-icon"

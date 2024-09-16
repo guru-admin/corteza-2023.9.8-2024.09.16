@@ -196,7 +196,7 @@
               @save="onBulkUpdate()"
             />
 
-            <template v-if="canDeleteSelectedRecords && !areAllRowsDeleted">
+            <template v-if="canDeleteSelectedRecords && !areAllRowsDeleted && areAllRowsSelected">
               <c-input-confirm
                 show-icon
                 :tooltip="$t('recordList.tooltip.deleteSelected')"

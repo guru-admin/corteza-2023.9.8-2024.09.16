@@ -14,7 +14,7 @@
 	<!-- Custom CSS -->
 	<link href="/custom.css" rel="stylesheet">
 	<link href="{{ links.AuthAssets }}/style.css?{{ buildtime }}" rel="stylesheet">
-	<title>Corteza</title>
+	<title>One</title>
 	<style>
 		body {
 			font-size: 1rem !important;
