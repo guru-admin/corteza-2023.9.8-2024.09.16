@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	oidcProviderPrefix = "openid-connect." // must match const in "github.com/cortezaproject/corteza/server/auth/external" external.go
+	oidcProviderPrefix = "openid-connect." // must match const in "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/auth/external" external.go
 
 	ExternalProviderUsageIdentity = "identity"
 	ExternalProviderUsageAPI      = "api"

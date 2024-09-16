@@ -3,10 +3,10 @@ package rest
 import (
 	"context"
 
-	"github.com/cortezaproject/corteza/server/pkg/api"
-	"github.com/cortezaproject/corteza/server/pkg/corredor"
-	"github.com/cortezaproject/corteza/server/system/rest/request"
-	"github.com/cortezaproject/corteza/server/system/service/event"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/api"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/corredor"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/rest/request"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service/event"
 )
 
 type (

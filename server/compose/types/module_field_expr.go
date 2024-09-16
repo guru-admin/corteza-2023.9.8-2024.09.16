@@ -3,7 +3,7 @@ package types
 import (
 	"database/sql/driver"
 	"encoding/json"
-	"github.com/cortezaproject/corteza/server/pkg/sql"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/sql"
 )
 
 type (

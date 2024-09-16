@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/eventbus"
-	"github.com/cortezaproject/corteza/server/pkg/logger"
-	"github.com/cortezaproject/corteza/server/pkg/options"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/eventbus"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/logger"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 )

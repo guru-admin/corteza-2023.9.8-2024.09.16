@@ -3,13 +3,13 @@ package service
 import (
 	"context"
 
-	"github.com/cortezaproject/corteza/server/pkg/actionlog"
-	"github.com/cortezaproject/corteza/server/pkg/apigw"
-	agtypes "github.com/cortezaproject/corteza/server/pkg/apigw/types"
-	a "github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/store"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/actionlog"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw"
+	agtypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/types"
+	a "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 type (

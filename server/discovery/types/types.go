@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	composeTypes "github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/pkg/id"
-	systemTypes "github.com/cortezaproject/corteza/server/system/types"
+	composeTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
+	systemTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/jmoiron/sqlx/types"
 )
 

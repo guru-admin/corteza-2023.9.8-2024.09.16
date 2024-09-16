@@ -3,15 +3,15 @@ package service
 import (
 	"context"
 
-	"github.com/cortezaproject/corteza/server/pkg/actionlog"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/pkg/label"
-	"github.com/cortezaproject/corteza/server/pkg/options"
-	"github.com/cortezaproject/corteza/server/pkg/rand"
-	"github.com/cortezaproject/corteza/server/store"
-	"github.com/cortezaproject/corteza/server/system/service/event"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/actionlog"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rand"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service/event"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	oauth2def "github.com/go-oauth2/oauth2/v4"
 )
 

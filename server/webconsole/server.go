@@ -4,7 +4,7 @@ import (
 	"embed"
 	"io/fs"
 
-	"github.com/cortezaproject/corteza/server/pkg/http"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/http"
 	"github.com/go-chi/chi/v5"
 )
 

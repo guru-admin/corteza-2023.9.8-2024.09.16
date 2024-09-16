@@ -11,10 +11,10 @@ package automation
 import (
 	"context"
 	"fmt"
-	"github.com/cortezaproject/corteza/server/pkg/actionlog"
-	. "github.com/cortezaproject/corteza/server/pkg/expr"
-	"github.com/cortezaproject/corteza/server/pkg/rbac"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/actionlog"
+	. "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/expr"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"sync"
 )
 

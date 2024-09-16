@@ -3,7 +3,7 @@ package mysql
 import (
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms"
 	"github.com/stretchr/testify/require"
 )
 

@@ -161,7 +161,7 @@ endpoints:
     path: "/nodes/{nodeID}/modules"
     authentication: []
     imports:
-      - github.com/cortezaproject/corteza/server/federation/types
+      - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/types
     apis:
       - name: readExposed
         method: GET
@@ -516,7 +516,7 @@ endpoints:
     - Client ID
     - Session ID
     imports:
-      - github.com/cortezaproject/corteza/server/pkg/rbac
+      - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac
     apis:
     - name: list
       path: "/"

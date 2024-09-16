@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/pkg/id"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
 	jsonpath "github.com/steinfletcher/apitest-jsonpath"
 
-	"github.com/cortezaproject/corteza/server/pkg/rbac"
-	"github.com/cortezaproject/corteza/server/system/types"
-	"github.com/cortezaproject/corteza/server/tests/helpers"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/tests/helpers"
 )
 
 func TestPermissionsEffective(t *testing.T) {

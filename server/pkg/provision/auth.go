@@ -7,19 +7,19 @@ import (
 	"regexp"
 	"strings"
 
-	internalAuth "github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/handle"
-	"github.com/cortezaproject/corteza/server/pkg/id"
-	"github.com/cortezaproject/corteza/server/pkg/logger"
-	"github.com/cortezaproject/corteza/server/pkg/mail"
-	"github.com/cortezaproject/corteza/server/pkg/options"
-	"github.com/cortezaproject/corteza/server/system/service"
+	internalAuth "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/handle"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/logger"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/mail"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service"
 	"go.uber.org/zap"
 
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/pkg/rand"
-	"github.com/cortezaproject/corteza/server/store"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rand"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 var (

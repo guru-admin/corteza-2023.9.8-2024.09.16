@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/pkg/options"
-	"github.com/cortezaproject/corteza/server/pkg/slice"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/slice"
 	"github.com/gorilla/websocket"
 	"go.uber.org/zap"
 )

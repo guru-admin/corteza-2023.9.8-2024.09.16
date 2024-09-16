@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/store"
-	sysTypes "github.com/cortezaproject/corteza/server/system/types"
-	"github.com/cortezaproject/corteza/server/tests/helpers"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	sysTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/tests/helpers"
 	"github.com/spf13/cast"
 )
 

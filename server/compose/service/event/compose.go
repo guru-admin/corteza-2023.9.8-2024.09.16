@@ -1,8 +1,8 @@
 package event
 
 import (
-	"github.com/cortezaproject/corteza/server/pkg/eventbus"
-	"github.com/cortezaproject/corteza/server/pkg/scheduler"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/eventbus"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/scheduler"
 )
 
 // Match returns false if given conditions do not match event & resource internals

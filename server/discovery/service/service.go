@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	"github.com/cortezaproject/corteza/server/pkg/eventbus"
-	"github.com/cortezaproject/corteza/server/pkg/options"
-	"github.com/cortezaproject/corteza/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/eventbus"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
 	"go.uber.org/zap"
 )
 

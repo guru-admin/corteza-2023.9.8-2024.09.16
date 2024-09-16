@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms/ddl"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/ddl"
 	"github.com/jmoiron/sqlx"
 )
 

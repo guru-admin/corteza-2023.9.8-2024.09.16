@@ -3,13 +3,13 @@ package helpers
 import (
 	"context"
 
-	automationTypes "github.com/cortezaproject/corteza/server/automation/types"
-	composeTypes "github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/cli"
-	"github.com/cortezaproject/corteza/server/pkg/eventbus"
-	"github.com/cortezaproject/corteza/server/pkg/rbac"
-	"github.com/cortezaproject/corteza/server/system/types"
+	automationTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	composeTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/cli"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/eventbus"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 type (

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/cortezaproject/corteza/server/automation/types"
-	sysEvent "github.com/cortezaproject/corteza/server/system/service/event"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	sysEvent "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service/event"
 	"github.com/stretchr/testify/require"
 	"testing"
 )

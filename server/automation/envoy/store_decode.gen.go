@@ -11,11 +11,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cortezaproject/corteza/server/automation/types"
-	"github.com/cortezaproject/corteza/server/pkg/dal"
-	"github.com/cortezaproject/corteza/server/pkg/envoyx"
-	"github.com/cortezaproject/corteza/server/pkg/id"
-	"github.com/cortezaproject/corteza/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/dal"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoyx"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
 	"github.com/pkg/errors"
 )
 

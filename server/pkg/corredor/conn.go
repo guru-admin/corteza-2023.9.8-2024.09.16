@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/cortezaproject/corteza/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

@@ -12,8 +12,8 @@ import (
 	"context"
 	"net/http"
 	"github.com/go-chi/chi/v5"
-	"github.com/cortezaproject/corteza/server/{{ .App }}/rest/request"
-	"github.com/cortezaproject/corteza/server/pkg/api"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/{{ .App }}/rest/request"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/api"
 )
 
 type (

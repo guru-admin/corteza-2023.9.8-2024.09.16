@@ -8,12 +8,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/cli"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/store"
-	"github.com/cortezaproject/corteza/server/system/service"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/cli"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/spf13/cobra"
 	"golang.org/x/crypto/ssh/terminal"
 )

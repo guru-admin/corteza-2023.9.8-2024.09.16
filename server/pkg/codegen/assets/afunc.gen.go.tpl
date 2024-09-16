@@ -9,10 +9,10 @@ package {{ .Package }}
 // {{ .Source }}
 
 import (
-	atypes "github.com/cortezaproject/corteza/server/automation/types"
+	atypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
 	"context"
-	"github.com/cortezaproject/corteza/server/pkg/expr"
-	"github.com/cortezaproject/corteza/server/pkg/wfexec"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/expr"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/wfexec"
 {{- range .Imports }}
   {{ normalizeImport . }}
 {{- end }}

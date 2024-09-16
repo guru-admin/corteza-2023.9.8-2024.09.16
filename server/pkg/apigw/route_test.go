@@ -6,9 +6,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/pkg/apigw/pipeline"
-	"github.com/cortezaproject/corteza/server/pkg/apigw/pipeline/chain"
-	"github.com/cortezaproject/corteza/server/pkg/apigw/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/pipeline"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/pipeline/chain"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/types"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 )

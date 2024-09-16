@@ -1,10 +1,10 @@
 package yaml
 
 import (
-	"github.com/cortezaproject/corteza/server/pkg/envoy"
-	"github.com/cortezaproject/corteza/server/pkg/envoy/resource"
-	"github.com/cortezaproject/corteza/server/pkg/y7s"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoy"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoy/resource"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/y7s"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"gopkg.in/yaml.v3"
 )
 

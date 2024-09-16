@@ -6,7 +6,7 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"fmt"
-	"github.com/cortezaproject/corteza/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
 	"github.com/lestrrat-go/jwx/jwa"
 	"github.com/stretchr/testify/require"
 	"testing"

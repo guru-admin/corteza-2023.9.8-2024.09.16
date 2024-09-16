@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"strings"
 
-	automationTypes "github.com/cortezaproject/corteza/server/automation/types"
-	composeTypes "github.com/cortezaproject/corteza/server/compose/types"
-	federationTypes "github.com/cortezaproject/corteza/server/federation/types"
-	"github.com/cortezaproject/corteza/server/pkg/envoy/resource"
-	"github.com/cortezaproject/corteza/server/pkg/rbac"
-	"github.com/cortezaproject/corteza/server/store"
-	systemTypes "github.com/cortezaproject/corteza/server/system/types"
+	automationTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	composeTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	federationTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoy/resource"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	systemTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/store"
-	systemTypes "github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	systemTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 func crissCrossUserRoles(ctx context.Context, s store.Storer, h helper, uu systemTypes.UserSet, rr systemTypes.RoleSet) (map[string]*systemTypes.User, map[string]*systemTypes.Role) {

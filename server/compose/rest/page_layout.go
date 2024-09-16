@@ -3,12 +3,12 @@ package rest
 import (
 	"context"
 
-	"github.com/cortezaproject/corteza/server/compose/rest/request"
-	"github.com/cortezaproject/corteza/server/compose/service"
-	"github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/api"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/pkg/payload"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/rest/request"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/api"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/payload"
 )
 
 type (

@@ -4,9 +4,9 @@ import (
 	"context"
 	"strconv"
 
-	composeTypes "github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/envoy"
-	"github.com/cortezaproject/corteza/server/pkg/envoy/resource"
+	composeTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoy"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoy/resource"
 )
 
 func composeChartFromResource(r *resource.ComposeChart, cfg *EncoderConfig) *composeChart {

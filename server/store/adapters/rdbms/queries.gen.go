@@ -7,15 +7,15 @@ package rdbms
 //
 
 import (
-	automationType "github.com/cortezaproject/corteza/server/automation/types"
-	composeType "github.com/cortezaproject/corteza/server/compose/types"
-	discoveryType "github.com/cortezaproject/corteza/server/discovery/types"
-	federationType "github.com/cortezaproject/corteza/server/federation/types"
-	actionlogType "github.com/cortezaproject/corteza/server/pkg/actionlog"
-	flagType "github.com/cortezaproject/corteza/server/pkg/flag/types"
-	labelsType "github.com/cortezaproject/corteza/server/pkg/label/types"
-	rbacType "github.com/cortezaproject/corteza/server/pkg/rbac"
-	systemType "github.com/cortezaproject/corteza/server/system/types"
+	automationType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	composeType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	discoveryType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/discovery/types"
+	federationType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/types"
+	actionlogType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/actionlog"
+	flagType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/flag/types"
+	labelsType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label/types"
+	rbacType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
+	systemType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/doug-martin/goqu/v9"
 )
 

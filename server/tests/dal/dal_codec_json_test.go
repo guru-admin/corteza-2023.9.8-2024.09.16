@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/dal"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/dal"
 )
 
 func Test_dal_codec_json(t *testing.T) {

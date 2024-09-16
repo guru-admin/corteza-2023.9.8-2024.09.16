@@ -4,15 +4,15 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cortezaproject/corteza/server/discovery/service"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/pkg/id"
-	"github.com/cortezaproject/corteza/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/discovery/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
 
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/pkg/rbac"
-	sysService "github.com/cortezaproject/corteza/server/system/service"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
+	sysService "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 type (

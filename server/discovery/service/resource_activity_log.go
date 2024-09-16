@@ -3,15 +3,15 @@ package service
 import (
 	"context"
 	"fmt"
-	"github.com/cortezaproject/corteza/server/pkg/eventbus"
-	"github.com/cortezaproject/corteza/server/pkg/id"
-	"github.com/cortezaproject/corteza/server/pkg/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/eventbus"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/options"
 	"go.uber.org/zap"
 	"sync"
 	"time"
 
-	"github.com/cortezaproject/corteza/server/discovery/types"
-	"github.com/cortezaproject/corteza/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/discovery/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
 )
 
 type (

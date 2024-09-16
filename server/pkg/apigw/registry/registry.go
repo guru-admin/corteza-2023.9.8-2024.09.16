@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cortezaproject/corteza/server/automation/service"
-	"github.com/cortezaproject/corteza/server/pkg/apigw/filter"
-	"github.com/cortezaproject/corteza/server/pkg/apigw/filter/proxy"
-	"github.com/cortezaproject/corteza/server/pkg/apigw/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/filter/proxy"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/types"
 )
 
 type (

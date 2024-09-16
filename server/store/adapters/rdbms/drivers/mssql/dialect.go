@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms/ddl"
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms/ql"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/ddl"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/ql"
 	"github.com/spf13/cast"
 
-	"github.com/cortezaproject/corteza/server/pkg/cast2"
-	"github.com/cortezaproject/corteza/server/pkg/dal"
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms/drivers"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/cast2"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/dal"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/drivers"
 	"github.com/doug-martin/goqu/v9"
 	"github.com/doug-martin/goqu/v9/dialect/sqlserver"
 	"github.com/doug-martin/goqu/v9/exp"

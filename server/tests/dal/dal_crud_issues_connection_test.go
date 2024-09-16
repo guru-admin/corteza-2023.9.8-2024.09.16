@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/tests/helpers"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/tests/helpers"
 	jsonpath "github.com/steinfletcher/apitest-jsonpath"
 )
 

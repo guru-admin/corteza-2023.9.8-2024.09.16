@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cortezaproject/corteza/server/pkg/sql"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/sql"
 
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/pkg/locale"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale"
 	"github.com/spf13/cast"
 )
 

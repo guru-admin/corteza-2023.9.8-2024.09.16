@@ -3,18 +3,18 @@ package dal_test
 import (
 	"context"
 	"fmt"
-	"github.com/cortezaproject/corteza/server/pkg/logger"
-	"github.com/cortezaproject/corteza/server/pkg/ql"
-	"github.com/cortezaproject/corteza/server/store"
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/logger"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/ql"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms"
 	"github.com/stretchr/testify/require"
 	"os"
 	"sort"
 	"testing"
 
-	_ "github.com/cortezaproject/corteza/server/store/adapters/rdbms/drivers/mysql"
-	_ "github.com/cortezaproject/corteza/server/store/adapters/rdbms/drivers/postgres"
-	_ "github.com/cortezaproject/corteza/server/store/adapters/rdbms/drivers/sqlite"
+	_ "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/drivers/mysql"
+	_ "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/drivers/postgres"
+	_ "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/drivers/sqlite"
 )
 
 type (

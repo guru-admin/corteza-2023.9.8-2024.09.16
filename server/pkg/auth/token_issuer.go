@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cortezaproject/corteza/server/pkg/payload"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/payload"
 	"github.com/go-oauth2/oauth2/v4"
 	"github.com/go-oauth2/oauth2/v4/generates"
 	"github.com/go-oauth2/oauth2/v4/models"

@@ -7,7 +7,7 @@ import (
 	{{- range $path, $alias :=  .imports }}
     {{ $alias }} {{ printf "%q" $path }}
 	{{- end }}
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms/drivers"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/drivers"
 	"github.com/doug-martin/goqu/v9"
 )
 

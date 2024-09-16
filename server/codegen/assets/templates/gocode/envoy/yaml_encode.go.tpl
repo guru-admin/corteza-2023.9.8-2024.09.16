@@ -7,8 +7,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/cortezaproject/corteza/server/pkg/envoyx"
-	"github.com/cortezaproject/corteza/server/pkg/y7s"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoyx"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/y7s"
 	"gopkg.in/yaml.v3"
 	"github.com/pkg/errors"
 {{- range .imports }}

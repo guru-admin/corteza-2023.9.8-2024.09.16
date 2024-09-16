@@ -8,10 +8,10 @@ package resource
 
 import (
 	"fmt"
-	automationTypes "github.com/cortezaproject/corteza/server/automation/types"
-	composeTypes "github.com/cortezaproject/corteza/server/compose/types"
-	federationTypes "github.com/cortezaproject/corteza/server/federation/types"
-	systemTypes "github.com/cortezaproject/corteza/server/system/types"
+	automationTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	composeTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	federationTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/types"
+	systemTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"strings"
 )
 

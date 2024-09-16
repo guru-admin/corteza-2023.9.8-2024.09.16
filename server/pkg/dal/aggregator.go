@@ -6,7 +6,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/cortezaproject/corteza/server/pkg/ql"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/ql"
 	"github.com/modern-go/reflect2"
 	"github.com/spf13/cast"
 )

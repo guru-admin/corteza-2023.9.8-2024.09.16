@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/PaesslerAG/gval"
-	"github.com/cortezaproject/corteza/server/pkg/expr"
-	"github.com/cortezaproject/corteza/server/pkg/gvalfnc"
-	"github.com/cortezaproject/corteza/server/pkg/ql"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/expr"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/gvalfnc"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/ql"
 )
 
 type (

@@ -3,7 +3,7 @@ package scheduler
 import (
 	"time"
 
-	"github.com/cortezaproject/corteza/server/pkg/logger"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/logger"
 	"github.com/getsentry/sentry-go"
 	"github.com/gorhill/cronexpr"
 	"go.uber.org/zap"

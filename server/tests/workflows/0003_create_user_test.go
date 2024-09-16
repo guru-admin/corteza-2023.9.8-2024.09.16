@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	autTypes "github.com/cortezaproject/corteza/server/automation/types"
-	sysTypes "github.com/cortezaproject/corteza/server/system/types"
+	autTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	sysTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/stretchr/testify/require"
 )
 

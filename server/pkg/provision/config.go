@@ -6,14 +6,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cortezaproject/corteza/server/pkg/dal"
-	"github.com/cortezaproject/corteza/server/pkg/envoyx"
-	se "github.com/cortezaproject/corteza/server/system/envoy"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/dal"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoyx"
+	se "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/envoy"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 
-	"github.com/cortezaproject/corteza/server/pkg/rbac"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac"
 
-	"github.com/cortezaproject/corteza/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
 	"go.uber.org/zap"
 )
 

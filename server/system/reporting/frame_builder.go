@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cortezaproject/corteza/server/pkg/dal"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/dal"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
 	"github.com/modern-go/reflect2"
 )
 

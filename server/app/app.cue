@@ -1,12 +1,12 @@
 package app
 
 import (
-	"github.com/cortezaproject/corteza/server/codegen/schema"
-	"github.com/cortezaproject/corteza/server/app/options"
-	"github.com/cortezaproject/corteza/server/system"
-	"github.com/cortezaproject/corteza/server/compose"
-	"github.com/cortezaproject/corteza/server/automation"
-	"github.com/cortezaproject/corteza/server/federation"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/codegen/schema"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/app/options"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation"
 )
 
 corteza: schema.#platform & {

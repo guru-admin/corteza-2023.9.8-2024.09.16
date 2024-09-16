@@ -11,9 +11,9 @@ package request
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/cortezaproject/corteza/server/pkg/label"
-	"github.com/cortezaproject/corteza/server/pkg/locale"
-	"github.com/cortezaproject/corteza/server/pkg/payload"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/payload"
 	"github.com/go-chi/chi/v5"
 	sqlxTypes "github.com/jmoiron/sqlx/types"
 	"io"

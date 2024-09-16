@@ -2,8 +2,8 @@ package tests
 
 import (
 	"context"
-	"github.com/cortezaproject/corteza/server/store"
-	"github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/stretchr/testify/require"
 	"testing"
 	"time"

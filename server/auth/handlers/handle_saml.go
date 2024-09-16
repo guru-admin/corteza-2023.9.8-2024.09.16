@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/cortezaproject/corteza/server/auth/external"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/auth/external"
 	"go.uber.org/zap"
 )
 

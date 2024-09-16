@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cortezaproject/corteza/server/pkg/envoyx"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoyx"
 )
 
 type (

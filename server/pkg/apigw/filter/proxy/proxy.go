@@ -11,9 +11,9 @@ import (
 	"net/url"
 	"time"
 
-	actx "github.com/cortezaproject/corteza/server/pkg/apigw/ctx"
-	"github.com/cortezaproject/corteza/server/pkg/apigw/types"
-	pe "github.com/cortezaproject/corteza/server/pkg/errors"
+	actx "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/ctx"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/apigw/types"
+	pe "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
 	"go.uber.org/zap"
 )
 

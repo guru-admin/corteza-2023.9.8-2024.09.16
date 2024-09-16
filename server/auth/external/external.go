@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	OIDC_PROVIDER_PREFIX = "openid-connect." // must match const in "github.com/cortezaproject/corteza/server/system/types" app_settings.go
+	OIDC_PROVIDER_PREFIX = "openid-connect." // must match const in "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types" app_settings.go
 
 )
 

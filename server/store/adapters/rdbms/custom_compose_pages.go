@@ -3,7 +3,7 @@ package rdbms
 import (
 	"context"
 
-	composeType "github.com/cortezaproject/corteza/server/compose/types"
+	composeType "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
 	"github.com/doug-martin/goqu/v9"
 )
 

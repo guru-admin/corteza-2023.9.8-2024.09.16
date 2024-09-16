@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	st "github.com/cortezaproject/corteza/server/system/types"
+	st "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 type (

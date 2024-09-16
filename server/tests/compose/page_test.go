@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cortezaproject/corteza/server/compose/service"
-	"github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/id"
-	"github.com/cortezaproject/corteza/server/store"
-	systemService "github.com/cortezaproject/corteza/server/system/service"
-	"github.com/cortezaproject/corteza/server/tests/helpers"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/id"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
+	systemService "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/tests/helpers"
 	jsonpath "github.com/steinfletcher/apitest-jsonpath"
 	"github.com/stretchr/testify/require"
 )

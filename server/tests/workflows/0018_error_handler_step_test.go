@@ -2,12 +2,12 @@ package workflows
 
 import (
 	"context"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/pkg/expr"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/expr"
 	"github.com/stretchr/testify/require"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/automation/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
 )
 
 func Test0018_error_handler_step(t *testing.T) {

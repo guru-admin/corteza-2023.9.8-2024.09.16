@@ -11,8 +11,8 @@ endpoints:
   path: "/namespace"
   authentication: []
   imports:
-    - github.com/cortezaproject/corteza/server/pkg/label
-    - github.com/cortezaproject/corteza/server/pkg/locale
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale
     - sqlxTypes github.com/jmoiron/sqlx/types
     - time
   apis:
@@ -253,10 +253,10 @@ endpoints:
   authentication: []
   imports:
     - sqlxTypes github.com/jmoiron/sqlx/types
-    - github.com/cortezaproject/corteza/server/pkg/locale
-    - github.com/cortezaproject/corteza/server/pkg/label
-    - github.com/cortezaproject/corteza/server/pkg/str
-    - github.com/cortezaproject/corteza/server/compose/types
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/str
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types
     - time
   parameters:
     path:
@@ -580,9 +580,9 @@ endpoints:
   authentication: []
   imports:
     - sqlxTypes github.com/jmoiron/sqlx/types
-    - github.com/cortezaproject/corteza/server/pkg/locale
-    - github.com/cortezaproject/corteza/server/compose/types
-    - github.com/cortezaproject/corteza/server/pkg/label
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label
     - time
   parameters:
     path:
@@ -872,9 +872,9 @@ endpoints:
       title: Namespace ID
   imports:
     - sqlxTypes github.com/jmoiron/sqlx/types
-    - github.com/cortezaproject/corteza/server/compose/types
-    - github.com/cortezaproject/corteza/server/pkg/locale
-    - github.com/cortezaproject/corteza/server/pkg/label
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label
     - time
   apis:
   - name: list
@@ -1012,7 +1012,7 @@ endpoints:
   path: "/namespace/{namespaceID}/module/{moduleID}/record"
   authentication: []
   imports:
-    - github.com/cortezaproject/corteza/server/compose/types
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types
     - time
   parameters:
     path:
@@ -1311,8 +1311,8 @@ endpoints:
   authentication: []
   imports:
     - sqlxTypes github.com/jmoiron/sqlx/types
-    - github.com/cortezaproject/corteza/server/pkg/label
-    - github.com/cortezaproject/corteza/server/pkg/locale
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/locale
     - time
   parameters:
     path:
@@ -1602,7 +1602,7 @@ endpoints:
   - Client ID
   - Session ID
   imports:
-    - github.com/cortezaproject/corteza/server/pkg/rbac
+    - github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/rbac
   apis:
   - name: list
     path: "/"

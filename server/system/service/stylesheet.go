@@ -4,8 +4,8 @@ import (
     "fmt"
     "github.com/bep/godartsass/v2"
     "github.com/cespare/xxhash/v2"
-    "github.com/cortezaproject/corteza/server/pkg/sass"
-    "github.com/cortezaproject/corteza/server/system/types"
+    "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/sass"
+    "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
     "go.uber.org/zap"
     "strings"
 )

@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cortezaproject/corteza/server/pkg/label/types"
-	"github.com/cortezaproject/corteza/server/pkg/str"
-	"github.com/cortezaproject/corteza/server/store"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/label/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/str"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store"
 )
 
 type (

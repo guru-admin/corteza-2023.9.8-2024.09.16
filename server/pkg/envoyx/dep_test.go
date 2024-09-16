@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cortezaproject/corteza/server/compose/types"
-	systemTypes "github.com/cortezaproject/corteza/server/system/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	systemTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 	"github.com/stretchr/testify/require"
 )
 
@@ -309,7 +309,7 @@ func TestDepXLinking(t *testing.T) {
 
 // goos: linux
 // goarch: amd64
-// pkg: github.com/cortezaproject/corteza/server/pkg/envoyx
+// pkg: github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/envoyx
 // cpu: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
 // BenchmarkDepGraphConstruction-12    	     826	   1495619 ns/op	 1633445 B/op	    6168 allocs/op
 // PASS

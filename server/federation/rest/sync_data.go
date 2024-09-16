@@ -7,17 +7,17 @@ import (
 	"strings"
 	"time"
 
-	cs "github.com/cortezaproject/corteza/server/compose/service"
-	ct "github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/federation/rest/request"
-	"github.com/cortezaproject/corteza/server/federation/service"
-	"github.com/cortezaproject/corteza/server/federation/types"
-	"github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/pkg/federation"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	ss "github.com/cortezaproject/corteza/server/system/service"
-	st "github.com/cortezaproject/corteza/server/system/types"
+	cs "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/service"
+	ct "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/rest/request"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/federation"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	ss "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/service"
+	st "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/types"
 )
 
 type (

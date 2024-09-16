@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/cortezaproject/corteza/server/pkg/logger"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/logger"
 	"github.com/go-chi/chi/v5/middleware"
 	"go.uber.org/zap"
 	"net/http"

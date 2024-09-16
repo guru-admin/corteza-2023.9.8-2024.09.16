@@ -2,7 +2,7 @@ package service
 
 import (
 	"bytes"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
 	"io"
 	"net/http"
 	"reflect"
@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	internalAuth "github.com/cortezaproject/corteza/server/pkg/auth"
+	internalAuth "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
 )
 
 func Test_sink_SignURL(t *testing.T) {

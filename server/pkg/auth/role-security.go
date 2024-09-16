@@ -3,7 +3,7 @@ package auth
 import (
 	"sort"
 
-	"github.com/cortezaproject/corteza/server/pkg/slice"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/slice"
 )
 
 // ApplyRoleSecurity takes role security params (set of permitted, prohibited and forced roles)

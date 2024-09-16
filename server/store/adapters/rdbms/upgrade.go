@@ -3,13 +3,13 @@ package rdbms
 import (
 	"context"
 	"fmt"
-	automationModels "github.com/cortezaproject/corteza/server/automation/model"
-	composeModels "github.com/cortezaproject/corteza/server/compose/model"
-	federationModels "github.com/cortezaproject/corteza/server/federation/model"
-	"github.com/cortezaproject/corteza/server/pkg/dal"
-	"github.com/cortezaproject/corteza/server/pkg/errors"
-	"github.com/cortezaproject/corteza/server/store/adapters/rdbms/ddl"
-	systemModels "github.com/cortezaproject/corteza/server/system/model"
+	automationModels "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/model"
+	composeModels "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/model"
+	federationModels "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/federation/model"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/dal"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/errors"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/store/adapters/rdbms/ddl"
+	systemModels "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/system/model"
 	"go.uber.org/zap"
 )
 

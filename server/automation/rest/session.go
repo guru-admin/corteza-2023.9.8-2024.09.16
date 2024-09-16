@@ -4,17 +4,17 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cortezaproject/corteza/server/automation/rest/request"
-	"github.com/cortezaproject/corteza/server/automation/service"
-	"github.com/cortezaproject/corteza/server/automation/types"
-	"github.com/cortezaproject/corteza/server/compose/automation"
-	cmpService "github.com/cortezaproject/corteza/server/compose/service"
-	cmpTypes "github.com/cortezaproject/corteza/server/compose/types"
-	"github.com/cortezaproject/corteza/server/pkg/api"
-	"github.com/cortezaproject/corteza/server/pkg/auth"
-	"github.com/cortezaproject/corteza/server/pkg/expr"
-	"github.com/cortezaproject/corteza/server/pkg/filter"
-	"github.com/cortezaproject/corteza/server/pkg/wfexec"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/rest/request"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/service"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/automation/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/automation"
+	cmpService "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/service"
+	cmpTypes "github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/compose/types"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/api"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/auth"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/expr"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/filter"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/wfexec"
 )
 
 type (
@@ -122,7 +122,7 @@ func (ctrl Session) ResumeState(ctx context.Context, r *request.SessionResumeSta
 	//
 	// Very naive approach for now.
 	//
-	// @note copied from https://github.com/cortezaproject/corteza/blob/2023.9.x/server/automation/rest/workflow.go#L189
+	// @note copied from https://github.com/guru-admin/corteza-2023.9.8-2024.09.16/blob/2023.9.x/server/automation/rest/workflow.go#L189
 	//       copied to reduce the need for some dependency; should be good enough for now
 	r.Input.Each(func(k string, v expr.TypedValue) error {
 		switch c := v.(type) {

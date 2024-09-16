@@ -10,7 +10,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/cortezaproject/corteza/server/pkg/handle"
+	"github.com/guru-admin/corteza-2023.9.8-2024.09.16/server/pkg/handle"
 	"gopkg.in/yaml.v3"
 )
 
